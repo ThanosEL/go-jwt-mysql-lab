@@ -1,5 +1,13 @@
 # JWT
-JWT provides a compact, self-contained way to securely transmit information as a JSON object.
+JSON Web Token (JWT) is a compact, URL-safe format used to securely transmit claims between parties.
+
+In this project, JWT is used for authentication.
+
+After a successful login, the server creates and signs a JWT. The client then sends that token with protected requests using the HTTP Authorization header:
+
+Authorization: Bearer <JWT>
+
+The server validates the token before allowing access to protected endpoints.
 
 #### JWT Structure
 A JWT consists of three parts encoded in Base64URL format and separated by dots:
